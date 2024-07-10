@@ -2,7 +2,7 @@ from rest_framework import generics, status
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import permission_classes
-from .models import Course, Question, Choice, Submission
+from .models import Course, Topic, Question, Choice, Submission
 from .serializers import CourseListSerializer, CourseDetailSerializer, QuestionSerializer, SubmissionSerializer
 
 @permission_classes([IsAuthenticated])

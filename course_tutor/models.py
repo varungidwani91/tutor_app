@@ -3,7 +3,16 @@ from django.contrib.auth.models import User
 
 class Course(models.Model):
     title = models.CharField(max_length=255)
-    videoUrl = models.URLField(max_length=200, null=True, blank=True)
+    description = models.TextField()  # Add description field
+    image_link = models.URLField(max_length=200, default='https://asktech.io/wp-content/uploads/2023/05/10003.png')
+
+    def __str__(self):
+        return self.title
+
+class Topic(models.Model):
+    course = models.ForeignKey(Course, related_name='topics', on_delete=models.CASCADE)
+    title = models.CharField(max_length=255)
+    videoUrl = models.URLField(max_length=200)
     details = models.TextField()
     transcript = models.TextField(null=True, blank=True)
     image_link = models.URLField(max_length=200, default='https://asktech.io/wp-content/uploads/2023/05/10003.png')

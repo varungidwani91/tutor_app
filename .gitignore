@@ -149,3 +149,4 @@ dmypy.json
 # Windows
 Thumbs.db
 ehthumbs.db
+core/settings.py
