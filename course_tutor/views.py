@@ -32,7 +32,7 @@ class SubmissionCreateView(generics.CreateAPIView):
         data = request.data
         user = request.user
         question = Question.objects.get(id=data['question'])
-        selected_choice = Choice.objects.get(id=data['selected_choice'])
+        selected_choice = Choice.objects.get(question=question, choice_text=data['selected_choice'])
         is_correct = selected_choice.is_correct
         submission = Submission.objects.create(
             user=user,
