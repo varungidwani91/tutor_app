@@ -67,6 +67,7 @@ Tutor App is a Django-based application that provides an educational content das
 
     ```bash
     python manage.py makemigrations
+    python manage.py makemigrations course_tutor
     python manage.py migrate
     ```
 
