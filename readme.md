@@ -130,3 +130,15 @@ curl -X POST http://127.0.0.1:8000/api/submissions/ \
            "selected_choice": "A JavaScript library"
          }'
 ```
+
+## Link for sample CRUD queries
+https://github.com/varungidwani91/tutor_app/blob/main/crud_queries.md
+
+## Link for database schema diagram
+https://github.com/varungidwani91/tutor_app/blob/main/database_schema_diagram.png
+
+## Link for inserting the data via admin portal
+ https://drive.google.com/drive/u/2/folders/1rsMVjiAS3V95BDhvlAzIw-4Shdq2tODn
+
+## Repository link for forntend react application
+https://github.com/prabeer451/courseapp_frontend.git
