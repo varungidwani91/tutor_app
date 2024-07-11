@@ -137,8 +137,11 @@ https://github.com/varungidwani91/tutor_app/blob/main/crud_queries.md
 ## Link for database schema diagram
 https://github.com/varungidwani91/tutor_app/blob/main/database_schema_diagram.png
 
-## Link for inserting the data via admin portal
- https://drive.google.com/drive/u/2/folders/1rsMVjiAS3V95BDhvlAzIw-4Shdq2tODn
+## Link for demo video of how to insert the data via admin portal
+https://drive.google.com/drive/u/2/folders/1rsMVjiAS3V95BDhvlAzIw-4Shdq2tODn
 
-## Repository link for forntend react application
+## Repository link for frontend react application
 https://github.com/prabeer451/courseapp_frontend.git
+
+## Link for demo video of frontend react application
+https://drive.google.com/file/d/1Ctmzbt9eJoBvroGfv-XYNktMtEzC-2wm/view?usp=sharing
