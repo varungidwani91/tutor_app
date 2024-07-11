@@ -85,7 +85,7 @@ Tutor App is a Django-based application that provides an educational content das
 
 8. **Access the application**:
 
-    Open your web browser and navigate to `http://127.0.0.1:8000/admin/` to access the Django admin panel.
+    Open your web browser and navigate to `http://127.0.0.1:8000/admin/` to access the Django admin panel. Login with the superuser credentials created in previous steps.
 
 ## API Endpoints
 
