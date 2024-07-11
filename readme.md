@@ -90,48 +90,42 @@ Tutor App is a Django-based application that provides an educational content das
 
 ### Obtain JWT Token
 
-    ```bash
-    curl -X POST http://127.0.0.1:8000/api/token/ \
-        -H "Content-Type: application/json" \
-        -d '{"username": "your_username", "password": "your_password"}'
-    ```
+```bash
+curl -X POST http://127.0.0.1:8000/api/token/ \
+     -H "Content-Type: application/json" \
+     -d '{"username": "your_username", "password": "your_password"}'
+```
+
 ### Refresh JWT Token
 
-    ```bash
-    curl -X POST http://127.0.0.1:8000/api/token/refresh/ \
-        -H "Content-Type: application/json" \
-        -d '{"refresh": "your_refresh_token_here"}'
-    ```
+```bash
+curl -X POST http://127.0.0.1:8000/api/token/refresh/ \
+     -H "Content-Type: application/json" \
+     -d '{"refresh": "your_refresh_token_here"}'
+```
 
 ### Get List of Courses (Limited Fields)
 
-    ```bash
-    curl -X GET http://127.0.0.1:8000/api/courses/ \
-        -H "Authorization: Bearer your_access_token_here"
-    ```
+```bash
+curl -X GET http://127.0.0.1:8000/api/courses/ \
+     -H "Authorization: Bearer your_access_token_here"
+```
 
 ### Get Details of a Specific Course
 
-    ```bash
-    curl -X GET http://127.0.0.1:8000/api/courses/1/ \
+```bash
+curl -X GET http://127.0.0.1:8000/api/courses/1/ \
      -H "Authorization: Bearer your_access_token_here"
-    ```
+```
 
-### Get List of Questions for a Specific Course
+### Submit an Answer
 
-    ```bash
-    curl -X GET http://127.0.0.1:8000/api/courses/1/questions/ \
-     -H "Authorization: Bearer your_access_token_here"
-     ```
-
-### Get List of Questions for a Specific Course
-
-    ```bash
-    curl -X POST http://127.0.0.1:8000/api/submissions/ \
+```bash
+curl -X POST http://127.0.0.1:8000/api/submissions/ \
      -H "Authorization: Bearer your_access_token_here" \
      -H "Content-Type: application/json" \
      -d '{
            "question": 1,
-           "selected_choice": 2
+           "selected_choice": "A JavaScript library"
          }'
-    ```
+```
